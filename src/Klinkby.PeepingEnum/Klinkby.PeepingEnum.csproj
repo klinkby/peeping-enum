@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<Title>Klinkby.PeepingEnum</Title>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard10</TargetFramework>
+    <Nullable>enable</Nullable>
+	<LangVersion>8.0</LangVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Authors>klinkby</Authors>
+	<PackageProjectUrl>https://github.com/klinkby/peeping-enum</PackageProjectUrl>
+	<Copyright>No rights reserved.</Copyright>
+	<Description>Decorator for IEnumerable&lt;T&gt; that peeps the first element to see if the underlying IEnumerator&lt;T&gt; 
+has any elements, in a non-greedy fashion where a pending enumeration does not have to restart.</Description>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryUrl>https://github.com/klinkby/peeping-enum</RepositoryUrl>
+	<PackageTags>ienumerable;peek;peep</PackageTags>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
